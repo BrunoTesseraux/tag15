@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+image {
+  display: block;
+  max-width: 100%;
+}
+div{
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    animation-name: glow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes glow{
+    25%{
+        box-shadow: 0 0 150px red;
+    }
+    50%{
+        box-shadow: 0 0 150px green;
+    }
+    75%{
+        box-shadow: 0 0 150px pink;
+    }
+    100%{
+        box-shadow: 0 0 150px yellow;
+    }
+}
+}

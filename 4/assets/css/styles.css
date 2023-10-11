@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  margin-left: 200px;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  transition: 2s;
+}
+div:hover {
+  transform: rotate(90deg) scale(1.5);
+  transform-origin: bottom left;
+  border-radius: 20%;
+}
