@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+}
+section {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  animation-name: wobble;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
 div {
   height: 100px;
   width: 100px;
@@ -44,18 +56,45 @@ div:nth-of-type(4) {
   }
   25% {
     top: 0;
-    left: 500px;
+    left: 250px;
   }
   50% {
-    top: 500px;
-    left: 500px;
+    top: 250px;
+    left: 250px;
   }
   75% {
-    top: 500px;
+    top: 250px;
     left: 0;
   }
   100% {
     top: 0;
     left: 0;
+  }
+}
+@keyframes wobble {
+  0% {
+    transform: translate();
+    transform: rotate(0);
+    transform-origin: center;
+  }
+  20% {
+    transform: translate(200px, 200px);
+    transform: rotate(72deg);
+  }
+  40% {
+    transform: translate(400px, 400px);
+    transform: rotate(144deg);
+  }
+  60% {
+    transform: translate(600px, 600px);
+    transform: rotate(216deg);
+  }
+  80% {
+    transform: translate(400px, 400px);
+    transform: rotate(288deg);
+  }
+  100% {
+    transform: translate(200px, 200px);
+    transform: rotate(360deg);
   }
 }
